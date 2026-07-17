@@ -96,13 +96,19 @@ nav h2 { color: var(--kurumi-red); font-weight: 900; letter-spacing: 3px; }
     transition: 0.5s;
 }
 .kurumi-gif {
-    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-    width: 380px; /* Lebih besar dari foto profil agar jadi aura di belakang */
-    height: auto; opacity: 0.35; pointer-events: none; z-index: 1; /* GIF DI BELAKANG */
-    mix-blend-mode: screen; /* Biar menyatu dengan warna hitam background */
-    filter: drop-shadow(0 0 15px var(--kurumi-red));
-    transition: 0.5s;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 380px; 
+    height: auto; 
+    opacity: 0.8; /* Kita naikkan opacity-nya agar lebih terlihat */
+    pointer-events: none; 
+    z-index: 1; 
+    /* Hapus baris mix-blend-mode: screen; agar warna asli GIF terlihat */
+    filter: drop-shadow(0 0 10px var(--kurumi-red));
 }
+
 /* Efek interaktif saat disentuh/di-hover */
 .profile-wrapper:hover .profile-img { 
     transform: scale(1.05); box-shadow: 0 0 50px var(--accent); 
