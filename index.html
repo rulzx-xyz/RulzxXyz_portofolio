@@ -3,15 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khoerul (Arul) | Profil Utama</title>
+    <title>Arul | Profil Utama</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="zafkiel-container">
-        <div class="zafkiel-clock"></div>
-    </div>
-
     <nav>
         <h2>ARUL.</h2>
         <ul class="nav-links">
@@ -20,48 +15,23 @@
             <li><a href="contact.html">Koneksi</a></li>
         </ul>
     </nav>
+    <div class="zafkiel-corner" id="zafkiel-clock">XII</div>
 
     <header class="page-section">
-        <!-- GIF/Video Landscape di atas -->
-        <video id="kurumiVideo" autoplay loop muted playsinline class="kurumi-landscape-gif">
+        <video autoplay loop muted playsinline class="kurumi-landscape-gif">
             <source src="assets/kurumi.mp4" type="video/mp4">
         </video>
-        
-        <!-- Tombol Suara -->
-        <button id="soundToggle" class="btn-sound">
-            <i class="fas fa-volume-mute"></i> Aktifkan Suara
-        </button>
+        <button id="soundToggle" class="btn-sound">Aktifkan Suara</button>
 
-        <div class="profile-container hidden mt-4">
-            <div class="profile-wrapper">
-                <img src="assets/profil.jpg" alt="Foto Profil Arul" class="profile-img">
-            </div>
-            
-            <div class="hero-text text-center mt-4">
+        <div class="profile-container">
+            <div class="profile-wrapper"><img src="assets/profil.jpg" class="profile-img"></div>
+            <div class="hero-text text-center">
                 <h1>Sang Arsitek Digital, <span>Khoerul</span></h1>
-                <h3 class="subtitle">Biasa dikenal sebagai <strong>Arul</strong></h3>
-                <p class="copywriting">
-                    "Mengubah barisan kode menjadi mahakarya." Sejak 2023, saya telah mendedikasikan diri di dunia pemrograman. Kecepatan, presisi, dan estetika adalah pilar utama dari setiap proyek yang saya bangun.
-                </p>
-                <a href="skills.html" class="btn">Jelajahi Arsip & Keahlian</a>
+                <p class="copywriting">"Mengubah barisan kode menjadi mahakarya." Sejak 2023, saya telah mendedikasikan diri di dunia pemrograman.</p>
+                <a href="skills.html" class="btn">Jelajahi Arsip</a>
             </div>
         </div>
     </header>
-
-    <script>
-        const video = document.getElementById("kurumiVideo");
-        const toggleBtn = document.getElementById("soundToggle");
-
-        toggleBtn.addEventListener("click", function() {
-            if (video.muted) {
-                video.muted = false;
-                toggleBtn.innerHTML = '<i class="fas fa-volume-up"></i> Suara Aktif';
-            } else {
-                video.muted = true;
-                toggleBtn.innerHTML = '<i class="fas fa-volume-mute"></i> Aktifkan Suara';
-            }
-        });
-    </script>
     <script src="script.js"></script>
 </body>
 </html>
